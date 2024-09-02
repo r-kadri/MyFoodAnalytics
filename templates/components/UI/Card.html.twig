@@ -1,0 +1,12 @@
+<div class="card mb-4">
+    {% if title is defined %}
+        <div class="card-header">
+            <i class="fas fa-{{ icon }} me-1"></i>
+            {{ title }}
+        </div>
+    {% endif %}
+    <div class="card-body">{{ body }}</div>
+    {% if footer is defined %}
+        <div class="card-footer small text-muted">{{ footer }}</div>
+    {% endif %}
+</div>
