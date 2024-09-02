@@ -1,0 +1,9 @@
+<a
+    class="nav-link"
+    href="{{ path(route) }}"
+>
+    {% if icon is defined %}
+        <i class="fas fa-{{ icon }}"></i>&nbsp;
+    {% endif %}
+    {{ name }}
+</a>
